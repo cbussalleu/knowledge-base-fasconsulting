@@ -1,5 +1,4 @@
 import { Navbar } from "@/components/Navbar";
-import { KBHero } from "@/components/knowledgebase/KBHero";
 import { KBLatestUpdates } from "@/components/knowledgebase/KBLatestUpdates"; 
 import { KBResourcesSection } from "@/components/knowledgebase/KBResourcesSection";
 import { KBTopResourcesSection } from "@/components/knowledgebase/KBTopResourcesSection";
@@ -10,12 +9,13 @@ const KnowledgeBasePage = () => {
   return (
     <div className="min-h-screen bg-dark text-white overflow-hidden">
       <Navbar />
-      <KBHero />
-      <KBLatestUpdates />
-      <KBResourcesSection />
-      <KBTopResourcesSection />
-      <KBHelpSection />
-      <ContactSection />
+      <div className="pt-24">
+        <KBLatestUpdates />
+        <KBResourcesSection />
+        <KBTopResourcesSection />
+        <KBHelpSection />
+        <ContactSection />
+      </div>
     </div>
   );
 };
